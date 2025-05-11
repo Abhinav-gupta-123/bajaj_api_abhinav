@@ -22,10 +22,6 @@ print("Webhook URL:", webhook_url)
 print("Access Token:", access_token)
 
 reg_no_last_digit = int(data["regNo"][-1])
-question_url = "https://drive.google.com/file/d/1q8F8g0EpyNzd5BWk-voe5CKbsxoskJWY/view?usp=sharing" if reg_no_last_digit % 2 == 1 else "https://drive.google.com/file/d/1PO1ZvmDqAZJv77XRYsVben11Wp2HVb/view?usp=sharing"
-
-print("SQL Question URL:", question_url)
-
 
 sql_query = """SELECT 
     p.AMOUNT AS SALARY,
