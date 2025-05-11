@@ -21,8 +21,6 @@ if not webhook_url or not access_token:
 print("Webhook URL:", webhook_url)
 print("Access Token:", access_token)
 
-reg_no_last_digit = int(data["regNo"][-1])
-
 sql_query = """SELECT 
     p.AMOUNT AS SALARY,
     CONCAT(e.FIRST_NAME, ' ', e.LAST_NAME) AS NAME,
